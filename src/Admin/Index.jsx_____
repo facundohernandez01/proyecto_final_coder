@@ -1,0 +1,51 @@
+import React from 'react'
+import {uploadFile} from '../storage'
+import {useState} from 'react'
+
+export const AdminForm = () => {
+    const [file, setFile] = useState(null)
+
+/*     const handleSubmit = async (e) => {
+      e.preventDefault();
+      try{
+        const result = await uploadFile(file)
+        console.log(result);
+      } catch (error) {
+        console.error(error)
+      }
+  
+      } */
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+          // obtener la lista de archivos seleccionados
+          const fileList = e.target.files;
+      
+          if (fileList && fileList.length > 0) {
+            // iterar sobre la lista de archivos y subirlos uno por uno
+            for (let i = 0; i < fileList.length; i++) {
+              const file = fileList[i];
+              const result = await uploadFile(file);
+              console.log(result);
+            }
+          } else {
+            console.error("No se seleccionaron archivos");
+          }
+        } catch (error) {
+          console.error(error);
+        }
+      }
+  return (
+    <>
+    <form onSubmit={handleSubmit}>
+        <input type='file'
+        name=''
+        id=''
+        onChange={(e) => setFile(e.target.files[0])}
+        multiple
+        />
+    <button>Cargar</button>
+    </form>
+    </>
+  )
+}

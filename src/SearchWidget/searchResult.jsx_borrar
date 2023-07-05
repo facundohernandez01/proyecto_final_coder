@@ -1,0 +1,32 @@
+import ItemList from "../ItemList/index";
+import { useContext } from "react";
+import { CartContext } from '../Context/index';
+import { useParams } from "react-router-dom";
+import {Grid} from '@mui/material';
+
+const SearchResult = ({ searchResults }) => {
+  const { cart, addCart, ItemsList } = useContext(CartContext)
+  const { categoria } = useParams();
+  let filtraCat =  ItemsList.filter((producto) => producto.categoria == categoria )
+  let productos = filtraCat=='' ? filtraCat = ItemsList : filtraCat
+
+  return (
+    <>
+      {searchResults.length > 0 ? (
+
+        searchResults.map((item) => {
+          return (
+            <Grid key={item.id} item xs={12} md={3} >
+            <ItemList item={item} key={item.id} />
+            </Grid>
+          );
+        })
+
+      ) : (
+        <p>No se encontraron resultados</p>
+      )}
+    </>
+  );
+};
+
+export default SearchResult;

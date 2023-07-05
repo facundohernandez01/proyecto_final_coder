@@ -1,0 +1,173 @@
+/* styles.css */
+
+.my-autocomplete .MuiAutocomplete-popupIndicator {
+    color: #ac4242!important;
+  }
+  
+.my-autocomplete .MuiAutocomplete-popper {
+    max-height: 200px!important;
+    overflow-y: auto!important;
+  }
+  
+.my-autocomplete ::-webkit-scrollbar {
+    width: 8px!important;
+  }
+.my-autocomplete ::-webkit-scrollbar-track {
+    background-color: #4b0000!important;
+  }
+  
+.my-autocomplete ::-webkit-scrollbar-thumb {
+    background-color: #AAA!important;
+  }
+  
+.my-autocomplete ::-webkit-scrollbar-thumb:hover {
+    background-color: #999!important;
+  }
+
+.css-1ofem7p-MuiAutocomplete-listbox .MuiAutocomplete-popupIndicator {
+    color: #ac4242!important;
+  }
+  
+.css-1ofem7p-MuiAutocomplete-listbox .MuiAutocomplete-popper {
+    max-height: 200px!important;
+    overflow-y: auto!important;
+  }
+  
+
+.css-1ofem7p-MuiAutocomplete-listbox ::-webkit-scrollbar {
+    background-color: #4b0000!important;
+
+}
+  
+.css-1ofem7p-MuiAutocomplete-listbox ::-webkit-scrollbar-track {
+    background-color: #AAA!important;
+
+}
+
+.css-1ofem7p-MuiAutocomplete-listbox ::-webkit-scrollbar-thumb {
+    background-color: #4b0000!important;
+
+}
+
+.css-1ofem7p-MuiAutocomplete-listbox ::-webkit-scrollbar-thumb:hover {
+    background-color: #999!important;
+
+}
+
+
+
+.MuiAutocomplete-listbox .MuiAutocomplete-popupIndicator {
+    color: #ac4242!important;
+  }
+  
+.MuiAutocomplete-listbox .MuiAutocomplete-popper {
+    max-height: 200px!important;
+    overflow-y: auto!important;
+  }
+  
+
+.MuiAutocomplete-listbox ::-webkit-scrollbar {
+    background-color: #4b0000!important;
+
+}
+  
+.MuiAutocomplete-listbox ::-webkit-scrollbar-track {
+    background-color: #AAA!important;
+
+}
+
+.MuiAutocomplete-listbox ::-webkit-scrollbar-thumb {
+    background-color: #4b0000!important;
+
+}
+
+.MuiAutocomplete-listbox ::-webkit-scrollbar-thumb:hover {
+    background-color: #999!important;
+
+}
+
+
+.MuiAutocomplete-popper.css-1s5lphu-MuiPopper-root-MuiAutocomplete-popper.MuiPopperUnstyled-root ::-webkit-scrollbar {
+    background-color: #3d306c94!important;
+
+}
+
+.MuiAutocomplete-popper.css-1s5lphu-MuiPopper-root-MuiAutocomplete-popper.MuiPopperUnstyled-root ::-webkit-scrollbar-track {
+    background-color: #fff!important;
+
+}
+.MuiAutocomplete-popper.css-1s5lphu-MuiPopper-root-MuiAutocomplete-popper.MuiPopperUnstyled-root ::-webkit-scrollbar-thumb {
+    background-color: #3d306c94!important;
+
+}
+.MuiAutocomplete-popper.css-1s5lphu-MuiPopper-root-MuiAutocomplete-popper.MuiPopperUnstyled-root ::-webkit-scrollbar-thumb:hover {
+    background-color: #2c2c2c!important;
+
+}
+.MuiAutocomplete-popper.css-1s5lphu-MuiPopper-root-MuiAutocomplete-popper.MuiPopperUnstyled-root ::-webkit-scrollbar  {
+width: 4px!important;
+
+}
+
+
+.MuiAutocomplete-popper.css-9e5uuu-MuiPopper-root-MuiAutocomplete-popper.MuiPopperUnstyled-root ::-webkit-scrollbar {
+  background-color: #3d306c94!important;
+
+}
+
+.MuiAutocomplete-popper.css-9e5uuu-MuiPopper-root-MuiAutocomplete-popper.MuiPopperUnstyled-root ::-webkit-scrollbar-track {
+  background-color: #fff!important;
+
+}
+.MuiAutocomplete-popper.css-9e5uuu-MuiPopper-root-MuiAutocomplete-popper.MuiPopperUnstyled-root ::-webkit-scrollbar-thumb {
+  background-color: #3d306c94!important;
+
+}
+.MuiAutocomplete-popper.css-9e5uuu-MuiPopper-root-MuiAutocomplete-popper.MuiPopperUnstyled-root ::-webkit-scrollbar-thumb:hover {
+  background-color: #2c2c2c!important;
+
+}
+.MuiAutocomplete-popper.css-9e5uuu-MuiPopper-root-MuiAutocomplete-popper.MuiPopperUnstyled-root ::-webkit-scrollbar  {
+width: 4px!important;
+
+}
+
+
+
+
+
+.MuiAutocomplete-popper.css-1s5lphu-MuiPopper-root-MuiAutocomplete-popper.MuiPopper-root ::-webkit-scrollbar {
+  background-color: #3d306c94!important;
+  width: 4px!important;
+
+}
+
+.MuiAutocomplete-popper.css-1s5lphu-MuiPopper-root-MuiAutocomplete-popper.MuiPopper-root ::-webkit-scrollbar-track{
+  background-color: #fff!important;
+
+
+}
+.MuiAutocomplete-paper.css-9e5uuu-MuiPaper-root-MuiAutocomplete-paper ::-webkit-scrollbar-thumb
+.MuiAutocomplete-popper.css-1s5lphu-MuiPopper-root-MuiAutocomplete-popper.MuiPopper-root ::-webkit-scrollbar-thumb{
+  background-color: #3d306c94!important;
+
+
+}
+.MuiAutocomplete-paper.css-9e5uuu-MuiPaper-root-MuiAutocomplete-paper ::-webkit-scrollbar-thumb:hover  
+.MuiAutocomplete-popper.css-1s5lphu-MuiPopper-root-MuiAutocomplete-popper.MuiPopper-root ::-webkit-scrollbar-thumb:hover  {
+  background-color: #2c2c2c!important;
+
+
+}
+
+.MuiAutocomplete-paper.css-9e5uuu-MuiPaper-root-MuiAutocomplete-paper ::-webkit-scrollbar,
+.MuiAutocomplete-popper.css-1s5lphu-MuiPopper-root-MuiAutocomplete-popper.MuiPopper-root ::-webkit-scrollbar {
+  width: 4px!important;
+  background-color: #3d306c94!important;
+
+ }
+
+.css-1ofem7p-MuiAutocomplete-listbox ::-webkit-scrollbar{
+  width: 4px!important;
+  background-color: #3d306c94!important;
+}

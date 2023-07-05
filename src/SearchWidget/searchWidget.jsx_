@@ -1,0 +1,90 @@
+import ItemList from "../ItemList/index";
+import { useContext, useState } from "react";
+import { CartContext } from "../Context/index";
+import { Link as RouterLink } from "react-router-dom";
+import { Autocomplete, TextField, InputAdornment } from "@mui/material";
+import ManageSearchIcon from "@mui/icons-material/ManageSearch";
+import List from "@mui/material/List";
+import Button from "@mui/material/Button";
+import ListItem from "@mui/material/ListItem";
+import Divider from "@mui/material/Divider";
+import ListItemText from "@mui/material/ListItemText";
+import ListItemAvatar from "@mui/material/ListItemAvatar";
+import Avatar from "@mui/material/Avatar";
+import { styled } from '@mui/material/styles';
+import '../scrollbar.css'
+
+const SearchWidget = () => {
+  const { ItemsList } = useContext(CartContext);
+  let productos = ItemsList;
+  const [searchValue, setSearchValue] = useState("");
+  const handleSearch = (event, newValue) => {
+    setSearchValue(newValue);
+  };
+  const filteredProducts = productos.filter((product) =>
+    product.title.toLowerCase().includes(searchValue.toLowerCase())
+  );
+
+  const CustomTextField = styled(TextField)({
+    '& .MuiInputBase-input': {
+      color: 'white', // cambiar aquí el color deseado
+    },
+  });
+  return (
+    <Autocomplete
+      freeSolo
+      className='my-autocomplete'
+      size="small"
+      disableClearable
+      options={productos.map((option) => ({
+        title: option.title,
+        image: option.image_url,
+        id: option.id,
+      }))}
+      sx={{ width: 400, backgroundColor: "#fff", borderRadius: 1   }}
+
+      value={searchValue}
+      onChange={handleSearch}
+      getOptionLabel={(option) => option.title || ""} // Modificación aquí
+      renderInput={(params) => (
+        <TextField
+        size="small"
+          {...params}
+/*           sx={{ width: 400, backgroundColor: "#fff", borderRadius: 1, height: 40}}
+ */          InputProps={{
+            ...params.InputProps,
+            type: "search",
+            endAdornment: (
+              <InputAdornment position="end">
+                <ManageSearchIcon />
+              </InputAdornment>
+            ),
+          }}
+        />
+      )}
+      renderOption={(props, option) => (
+        
+        <List key={option.id}
+
+          sx={{ width: "100%",  bgcolor: "background.paper" }}
+        >
+          <ListItem component={RouterLink} to={"/productos/" + option.id}
+>
+  
+            <ListItemAvatar>
+              <Avatar
+                src={option.image}
+                alt={option.title}
+                style={{ marginRight: 6, width: 50, height: 50 }}
+              />
+            </ListItemAvatar>
+            <ListItemText primary={option.title} />
+          </ListItem>
+          <Divider variant="inset" component="li" />
+        </List>
+      )}
+    />
+  );
+};
+
+export default SearchWidget;
