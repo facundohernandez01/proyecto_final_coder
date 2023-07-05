@@ -11,7 +11,6 @@ import ItemDetail from "./ItemDetail";
 import Page404 from './Page404.jsx'
 import CompSlider from './Slider'
 import Logueo from "./Logueo";
-import { AdminForm } from "./Admin/Index";
 import Footer from './Footer'
 import './index.scss'
 import Whatsapp from "./Footer/whatsapp"
@@ -62,7 +61,6 @@ function App() {
         />
         <Route path='/categoria/:categoria' element={<ItemListContainer searchResults={searchResults}/>}/>
         <Route exact path="/productos/:id" element={<ItemDetail/>}/>
-        <Route path="/admin" element={<AdminForm/>} />
         <Route path="/error404" element={<Page404 />} />
         <Route path="*" element={<Page404 />} />
         <Route path="/qr" element={<QRCodeGenerator />} />
