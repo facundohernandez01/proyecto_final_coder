@@ -64,10 +64,12 @@ const ItemListContainer = ({ searchResults, showAllItems, setSearchResults }) =>
         return (
         
 
-          <Grid key={item.id} item xs={12} md={3}>
+        <>
+          <Grid style={{ marginTop: '80px' }}></Grid>
+          <Grid style={{ marginTop: '10px' }} key={item.id} item xs={12} md={3}>
             <ItemList item={item} key={item.id} />
           </Grid>
-    
+          </>
         );
       })}
     </>
