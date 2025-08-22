@@ -50,11 +50,8 @@ function App() {
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 0 }}>
         <Routes>
         <Route exact path='/form' element={<Form/>}/>
-        <Route path='/home'  
-        element={
-        searchResults.length > 0 || searchResults !== "" ? <ItemListContainer  searchResults={searchResults} setSearchResults={setSearchResults}/> : <Carousel/>
-        } 
-        />        <Route path='/'  
+        <Route exact path='/home' element={<Carousel/>}/>
+        <Route path='/'  
         element={
         searchResults.length > 0 || searchResults !== "" ? <ItemListContainer  searchResults={searchResults} setSearchResults={setSearchResults}/> : <Carousel/>
         } 
@@ -83,3 +80,4 @@ function App() {
 }
 
 export default App;
+
